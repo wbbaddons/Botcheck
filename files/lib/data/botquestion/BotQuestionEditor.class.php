@@ -2,6 +2,7 @@
 namespace wcf\data\botquestion;
 
 use wcf\data\DatabaseObjectEditor;
+
 // use wcf\data\IEditableCachedObject;
 // use wcf\system\cache\builder\BotQuestionCacheBuilder;
 
