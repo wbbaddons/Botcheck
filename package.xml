@@ -18,7 +18,11 @@
 		<requiredpackage minversion="2.0.0 Alpha 1">com.woltlab.wcf</requiredpackage>
 		<requiredpackage minversion="1.0.0 Alpha 1">com.woltlab.wcf.user</requiredpackage>
 	</requiredpackages>
-	
+
+	<excludedpackages>
+		<excludedpackage>de.cwalz.securityQuestion</excludedpackage>
+	</excludedpackages>	
+
 	<instructions type="install">
 		<instruction type="sql">install.sql</instruction>
 		<instruction type="option">option.xml</instruction>
