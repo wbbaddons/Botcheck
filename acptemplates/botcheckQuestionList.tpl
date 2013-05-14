@@ -4,18 +4,6 @@
 	//<![CDATA[
 	$(function() {
 		new WCF.Action.Delete('wcf\\data\\botcheck\\BotcheckQuestionAction', '.jsQuestionRow');
-		
-		var options = { };
-		{if $pages > 1}
-			options.refreshPage = true;
-			{if $pages == $pageNo}
-				options.updatePageNumber = -1;
-			{/if}
-		{else}
-			options.emptyMessage = '{lang}wcf.acp.botcheck.question.noneAvailable{/lang}';
-		{/if}
-		
-		new WCF.Table.EmptyTableHandler($('#questionTableContainer'), 'jsLabelRow', options);
 	});
 	//]]>
 </script>
