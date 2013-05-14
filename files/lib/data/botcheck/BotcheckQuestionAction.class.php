@@ -25,17 +25,17 @@ class BotcheckQuestionAction extends AbstractDatabaseObjectAction {
 	/**
 	 * @see	wcf\data\AbstractDatabaseObjectAction::$permissionsCreate
 	 */
-	protected $permissionsCreate = array('admin.user.botcheck.canManageQuestion');
+	protected $permissionsCreate = array('admin.user.botcheck.canManageQuestions');
 	
 	/**
 	 * @see	wcf\data\AbstractDatabaseObjectAction::$permissionsDelete
 	 */
-	protected $permissionsDelete = array('admin.user.botcheck.canManageQuestion');
+	protected $permissionsDelete = array('admin.user.botcheck.canManageQuestions');
 	
 	/**
 	 * @see	wcf\data\AbstractDatabaseObjectAction::$permissionsUpdate
 	 */
-	protected $permissionsUpdate = array('admin.user.botcheck.canManageQuestion');
+	protected $permissionsUpdate = array('admin.user.botcheck.canManageQuestions');
 	
 	/**
 	 * @see	wcf\data\AbstractDatabaseObjectAction::delete()
