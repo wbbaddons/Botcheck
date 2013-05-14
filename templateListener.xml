@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<data xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/templateListener.xsd">
+	<import>
+		<!-- user -->
+		<templatelistener name="quickLogin">
+			<environment>user</environment>
+			<templatename>userPanel</templatename>
+			<eventname>loginFields</eventname>
+			<templatecode><![CDATA[{include file='botcheckQuickLogin'}]]></templatecode>
+		</templatelistener>
+		
+		<templatelistener name="javascriptInclude">
+			<environment>user</environment>
+			<templatename>headInclude</templatename>
+			<eventname>javascriptInclude</eventname>
+			<templatecode><![CDATA[{if MODULE_USER_BOTCHECK}<script type="text/javascript" src="{@$__wcf->getPath()}js/Botcheck.js"></script>{/if}]]></templatecode>
+		</templatelistener>
+
+		<templatelistener name="javascriptInit">
+			<environment>user</environment>
+			<templatename>headInclude</templatename>
+			<eventname>javascriptInit</eventname>
+			<templatecode><![CDATA[{if MODULE_USER_BOTCHECK && !$__wcf->user->userID && !$__disableLoginLink|isset}
+	new Botcheck.QuickLogin();
+{/if}]]></templatecode>
+		</templatelistener>
+		<!-- /user -->
+	</import>
+</data>
