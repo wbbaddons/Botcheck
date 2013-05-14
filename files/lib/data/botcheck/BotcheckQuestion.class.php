@@ -2,6 +2,7 @@
 namespace wcf\data\botcheck;
 
 use wcf\data\DatabaseObject;
+use wcf\system\request\IRouteController;
 use wcf\system\WCF;
 
 /**
