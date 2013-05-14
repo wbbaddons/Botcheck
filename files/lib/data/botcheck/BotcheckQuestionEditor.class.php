@@ -18,7 +18,7 @@ use wcf\data\DatabaseObjectEditor;
  * 
  * @todo		TODO: implement caching (prepared)
  */
-class BotcheckQuestionEditor extends DatabaseObjectEditor /*implements IEditableCachedObject*/ {
+class BotcheckQuestionEditor extends DatabaseObjectEditor implements IEditableCachedObject {
 	/**
 	 * @see	wcf\data\DatabaseObjectEditor::$baseClass
 	 */
@@ -27,9 +27,7 @@ class BotcheckQuestionEditor extends DatabaseObjectEditor /*implements IEditable
 	/**
 	 * @see	wcf\data\IEditableCachedObject::resetCache()
 	 */
-	// public static function resetCache() {
-	//	TODO: One of those:
-	// 	BotcheckQuestionCacheBuilder::getInstance()->reset();
-	//	BotcheckCacheBuilder::getInstance()->reset();
-	// }
+	public static function resetCache() {
+		BotcheckQuestionCacheBuilder::getInstance()->reset();
+	}
 }
