@@ -1,7 +1,7 @@
-Bot Registration Question
-=========================
+Botcheck
+========
 
-[![Build Status](https://travis-ci.org/wbbaddons/Bot_Registration_Question.png?branch=master)](https://travis-ci.org/wbbaddons/Bot_Registration_Question)
+[![Build Status](https://travis-ci.org/wbbaddons/Botcheck.png?branch=master)](https://travis-ci.org/wbbaddons/Botcheck)
 
 This package asks predefined questions in the registration form to prevent registrations by bots.
 

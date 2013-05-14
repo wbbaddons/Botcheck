@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
-<package name="info.codingcorner.wcf.user.botquestion" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
+<package name="info.codingcorner.wcf.user.botcheck" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
 	<packageinformation>
-		<packagename>Bot Registration Question</packagename>
-		<packagename language="de">Bot-Frage - Registrierung</packagename>
+		<packagename>Botcheck Questions</packagename>
+		<packagename language="de">Botcheck Fragen</packagename>
 		<packagedescription>Asks predefined questions in the registration form to prevent registrations by bots.</packagedescription>
 		<packagedescription language="de">Stellt bei der Registrierung vordefinierte Fragen um Bots zu erkennen.</packagedescription>
 		<version>1.0.0 Alpha 1</version>
@@ -20,11 +20,12 @@
 	</requiredpackages>
 	
 	<instructions type="install">
+		<instruction type="sql">install.sql</instruction>
 		<instruction type="option">option.xml</instruction>
 		<instruction type="userGroupOption">userGroupOption.xml</instruction>
-		<!-- <instruction type="acpTemplate">acptemplates.tar</instruction> -->
+		<instruction type="acpTemplate">acptemplates.tar</instruction>
 		<instruction type="file">files.tar</instruction>
 		<instruction type="acpMenu">acpMenu.xml</instruction>
-		<!-- <instruction type="language">language/*.xml</instruction> -->
+		<instruction type="language">language/*.xml</instruction>
 	</instructions>
 </package>

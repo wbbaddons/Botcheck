@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="de">
+	<!-- ACP -->
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.admin.user.botcheck.canManageQuestions"><![CDATA[Kann Fragen verwalten]]></item>
+		<item name="wcf.acp.group.option.category.admin.user.botcheck"><![CDATA[Botcheck]]></item>
+	</category>
+
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.user.botcheck"><![CDATA[Botcheck]]></item>
+		<item name="wcf.acp.menu.link.user.botcheck.question.add"><![CDATA[Frage hinzufügen]]></item>
+		<item name="wcf.acp.menu.link.user.botcheck.question.list"><![CDATA[Fragen auflisten]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.module_user_botcheck"><![CDATA[Botcheck Fragen]]></item>
+		<item name="wcf.acp.option.module_user_botcheck.description"><![CDATA[Stellt bei der Registrierung vordefinierte Fragen um Bots zu erkennen.]]></item>
+	</category>
+
+	<category name="wcf.acp.botcheck">
+		<item name="wcf.acp.botcheck.question.add"><![CDATA[Frage hinzufügen]]></item>
+		<item name="wcf.acp.botcheck.question.answers"><![CDATA[Antworten]]></item>
+		<item name="wcf.acp.botcheck.question.edit"><![CDATA[Frage Bearbeiten]]></item>
+		<item name="wcf.acp.botcheck.question.question"><![CDATA[Frage]]></item>
+	</category>
+</language>

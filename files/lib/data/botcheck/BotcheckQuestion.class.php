@@ -1,5 +1,5 @@
 <?php
-namespace wcf\data\botquestion;
+namespace wcf\data\botcheck;
 
 use wcf\data\DatabaseObject;
 use wcf\system\WCF;
@@ -10,15 +10,15 @@ use wcf\system\WCF;
  * @author		Markus Bartz <roul@codingcorner.info>
  * @copyright	2013 Markus Bartz
  * @license		GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
- * @package		info.codingcorner.wcf.user.botquestion
- * @subpackage	data.botquestion
+ * @package		info.codingcorner.wcf.user.botcheck
+ * @subpackage	data.botcheck
  * @category	Community Framework
  */
-class Botquestion extends DatabaseObject {
+class BotcheckQuestion extends DatabaseObject {
 	/**
 	 * @see	wcf\data\DatabaseObject::$databaseTableName
 	 */
-	protected static $databaseTableName = 'botquestion';
+	protected static $databaseTableName = 'botcheck_question';
 	
 	/**
 	 * @see	wcf\data\DatabaseObject::$databaseIndexName
