@@ -14,7 +14,7 @@ use wcf\system\WCF;
  * @subpackage	data.botcheck
  * @category	Community Framework
  */
-class BotcheckQuestion extends DatabaseObject {
+class BotcheckQuestion extends DatabaseObject implements IRouteController {
 	/**
 	 * @see	wcf\data\DatabaseObject::$databaseTableName
 	 */
@@ -32,6 +32,13 @@ class BotcheckQuestion extends DatabaseObject {
 	 * @return	string
 	 */
 	public function __toString() {
+		return $this->getTitle();
+	}
+
+	/**
+	 * @see wcf\data\ITitledObject::getTitle()
+	 */
+	public function getTitle() {
 		return WCF::getLanguage()->get($this->question);
 	}
 }
