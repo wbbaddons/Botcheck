@@ -13,7 +13,7 @@ use wcf\data\DatabaseObjectList;
  * @subpackage	data.botquestion
  * @category	Community Framework
  */
-class BotQuestionList extends DatabaseObjectList {
+class BotquestionList extends DatabaseObjectList {
 	/**
 	 * @see	wcf\data\DatabaseObjectList::$className
 	 */

@@ -14,7 +14,7 @@ use wcf\system\WCF;
  * @subpackage	data.botquestion
  * @category	Community Framework
  */
-class BotQuestion extends DatabaseObject {
+class Botquestion extends DatabaseObject {
 	/**
 	 * @see	wcf\data\DatabaseObject::$databaseTableName
 	 */

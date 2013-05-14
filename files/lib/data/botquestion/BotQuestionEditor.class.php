@@ -18,7 +18,7 @@ use wcf\data\DatabaseObjectEditor;
  * 
  * @todo		TODO: implement caching (prepared)
  */
-class BotQuestionEditor extends DatabaseObjectEditor /*implements IEditableCachedObject*/ {
+class BotquestionEditor extends DatabaseObjectEditor /*implements IEditableCachedObject*/ {
 	/**
 	 * @see	wcf\data\DatabaseObjectEditor::$baseClass
 	 */

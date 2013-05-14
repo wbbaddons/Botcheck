@@ -8,13 +8,13 @@
 		
 		<acpmenuitem name="wcf.acp.menu.link.user.botquestion.list">
 			<parent>wcf.acp.menu.link.user.botquestion</parent>
-			<controller><![CDATA[wcf\acp\page\UserBotQuestionListPage]]></controller>
+			<controller><![CDATA[wcf\acp\page\UserBotquestionListPage]]></controller>
 			<permissions>admin.user.botquestion.canManageQuestion</permissions>
 		</acpmenuitem>
 		
 		<acpmenuitem name="wcf.acp.menu.link.user.botquestion.add">
 			<parent>wcf.acp.menu.link.user.botquestion</parent>
-			<controller><![CDATA[wcf\acp\form\UserBotQuestionAddForm]]></controller>
+			<controller><![CDATA[wcf\acp\form\UserBotquestionAddForm]]></controller>
 			<permissions>admin.user.botquestion.canManageQuestion</permissions>
 		</acpmenuitem>
 	</import>
