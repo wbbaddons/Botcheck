@@ -20,7 +20,10 @@
 	<category name="wcf.acp.botcheck">
 		<item name="wcf.acp.botcheck.question.add"><![CDATA[Add Question]]></item>
 		<item name="wcf.acp.botcheck.question.answers"><![CDATA[Answers]]></item>
+		<item name="wcf.acp.botcheck.question.delete.sure"><![CDATA[Do you really want to delete the question “{$question}”?]]></item>
 		<item name="wcf.acp.botcheck.question.edit"><![CDATA[Edit Question]]></item>
+		<item name="wcf.acp.botcheck.question.list"><![CDATA[Questions]]></item>
+		<item name="wcf.acp.botcheck.question.noneAvailable"><![CDATA[There are no questions yet.]]></item>
 		<item name="wcf.acp.botcheck.question.question"><![CDATA[Question]]></item>
 	</category>
 </language>
