@@ -34,7 +34,7 @@ Botcheck.QuickLogin = Class.extend({
 		var $loginForm = $('#loginForm');
 		$loginForm.find('input[name=action]').change($.proxy(this._change, this));
 	},
-	
+
 	/**
 	 * Handle toggle between login and register.
 	 * 
@@ -65,7 +65,5 @@ Botcheck.QuickLogin = Class.extend({
 			this._question.attr('required', false);
 			this._questionContainer.addClass('disabled');
 		}
-
-		this._loginSubmitButton.val(buttonTitle);
 	}
 });
