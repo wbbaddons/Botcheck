@@ -62,7 +62,7 @@
 							{event name='rowButtons'}
 						</td>
 						<td class="columnID">{@$question->questionID}</td>
-						<td class="columnTitle columnLabel">{if $question->isEditable()}<a href="{link controller='BotcheckQuestionEdit' object=$question}{/link}" title="{$question}" class="question">{$question}</a>{else}<p class="question">{$question}{/if}</p></td>
+						<td class="columnTitle columnLabel"><a href="{link controller='BotcheckQuestionEdit' object=$question}{/link}" title="{$question}" class="question">{$question}</a></td>
 						
 						{event name='columns'}
 					</tr>
