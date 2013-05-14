@@ -56,12 +56,8 @@
 				{foreach from=$objects item=question}
 					<tr class="jsQuestionRow">
 						<td class="columnIcon">
-							{if $question->isEditable()}
-								<a href="{link controller='BotcheckQuestionEdit' object=$question}{/link}" title="{lang}wcf.global.button.edit{/lang}" class="jsTooltip"><span class="icon icon16 icon-pencil"></span></a>
-							{/if}
-							{if $question->isDeletable()}
-								<span class="icon icon16 icon-remove jsDeleteButton jsTooltip pointer" title="{lang}wcf.global.button.delete{/lang}" data-object-id="{@$question->questionID}" data-confirm-message="{lang}wcf.acp.botcheck.question.delete.sure{/lang}"></span>
-							{/if}
+							<a href="{link controller='BotcheckQuestionEdit' object=$question}{/link}" title="{lang}wcf.global.button.edit{/lang}" class="jsTooltip"><span class="icon icon16 icon-pencil"></span></a>
+							<span class="icon icon16 icon-remove jsDeleteButton jsTooltip pointer" title="{lang}wcf.global.button.delete{/lang}" data-object-id="{@$question->questionID}" data-confirm-message="{lang}wcf.acp.botcheck.question.delete.sure{/lang}"></span>
 							
 							{event name='rowButtons'}
 						</td>
