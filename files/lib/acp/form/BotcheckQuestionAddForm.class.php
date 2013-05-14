@@ -1,5 +1,6 @@
 <?php
 namespace wcf\acp\form;
+
 use wcf\data\botcheck\BotcheckQuestionAction;
 use wcf\data\botcheck\BotcheckQuestionEditor;
 use wcf\data\package\PackageCache;
