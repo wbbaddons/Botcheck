@@ -3,6 +3,7 @@ namespace wcf\system\event\listener;
 
 use wcf\system\event\IEventListener;
 use wcf\system\WCF;
+use wcf\util\StringUtil;
 
 /**
  * Handles botcheck stuff in register form.
@@ -20,6 +21,12 @@ class RegisterFormBotcheckListener implements IEventListener {
 	 * @var	wcf\form\RegisterForm
 	 */
 	protected $eventObj = null;
+
+	/**
+	 * botcheckQuestion
+	 * @var string
+	 */
+	protected $botcheckQuestion = '';
 	
 	/**
 	 * @see	wcf\system\event\IEventListener::execute()
@@ -36,6 +43,14 @@ class RegisterFormBotcheckListener implements IEventListener {
 	protected function assignVariables() {
 		WCF::getTPL()->assign(array(
 			'question' => 'Testfrage',
+			'botcheckQuestion' => $this->botcheckQuestion,
 		));
+	}
+
+	/**
+	 * Handles the readFormParameters event.
+	 */
+	protected function readFormParameters() {
+		if (isset($_POST['botcheckQuestion'])) $this->botcheckQuestion = StringUtil::trim($_POST['botcheckQuestion']);
 	}
 }
