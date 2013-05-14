@@ -33,5 +33,6 @@
 		<instruction type="language">language/*.xml</instruction>
 		<instruction type="template">templates.tar</instruction>
 		<instruction type="templateListener">templateListener.xml</instruction>
+		<instruction type="eventListener">eventListener.xml</instruction>
 	</instructions>
 </package>
