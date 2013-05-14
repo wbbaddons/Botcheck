@@ -19,7 +19,7 @@ use wcf\system\WCF;
  * @subpackage	acp.form
  * @category	Community Framework
  */
-class BotcheckQuestionForm extends BotcheckQuestionForm {
+class BotcheckQuestionEditForm extends BotcheckQuestionForm {
 	/**
 	 * @see	wcf\page\AbstractPage::$activeMenuItem
 	 */
