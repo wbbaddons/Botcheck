@@ -1,9 +1,10 @@
 {if MODULE_USER_BOTCHECK && $question|isset}
 	<fieldset>
 		<legend>{lang}wcf.botcheck.register.title{/lang}</legend>
-		<dl{if $errorType.email|isset} class="formError"{/if}>
+		<small>{lang}wcf.botcheck.register.description{/lang}</small>
+		<dl>
 			<dt>
-				<label for="email">{lang}wcf.botcheck.register.question{/lang}</label>
+				<label>{lang}wcf.botcheck.register.question{/lang}</label>
 			</dt>
 			<dd>
 				{$question}
@@ -22,6 +23,6 @@
 				{/if}
 			</dd>
 		</dl>
-		{event name='emailFields'}
+		{event name='botcheckFields'}
 	</fieldset>
 {/if}
