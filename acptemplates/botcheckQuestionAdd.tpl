@@ -1,4 +1,4 @@
-{include file='header'}
+{include file='header' pageTitle='wcf.acp.botcheck.question.'|concat:$action}}
 <header class="boxHeadline">
 	<h1>{lang}wcf.acp.botcheck.question.{$action}{/lang}</h1>
 </header>
