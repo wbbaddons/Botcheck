@@ -20,6 +20,7 @@
 	<category name="wcf.acp.botcheck">
 		<item name="wcf.acp.botcheck.question.add"><![CDATA[Frage hinzufügen]]></item>
 		<item name="wcf.acp.botcheck.question.answers"><![CDATA[Antworten]]></item>
+		<item name="wcf.acp.botcheck.question.answers.description"><![CDATA[Ein Antwortmöglichkeit pro Zeile.]]></item>
 		<item name="wcf.acp.botcheck.question.delete.sure"><![CDATA[Wollen sie die Frage „{$question}“ wirklich löschen?]]></item>
 		<item name="wcf.acp.botcheck.question.edit"><![CDATA[Frage Bearbeiten]]></item>
 		<item name="wcf.acp.botcheck.question.list"><![CDATA[Fragen]]></item>

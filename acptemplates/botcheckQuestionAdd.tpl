@@ -49,6 +49,7 @@
 				<dt><label for="answers">{lang}wcf.acp.botcheck.question.answers{/lang}</label></dt>
 				<dd>
 					<textarea id="answers" name="answers" cols="40" rows="10">{$answers}</textarea>
+					<small>{lang}wcf.acp.botcheck.question.answers.description{/lang}</small>
 					{if $errorField == 'answers'}
 						<small class="innerError">
 							{if $errorType == 'empty'}
