@@ -1,6 +1,7 @@
 <?php
 namespace wcf\system\event\listener;
 
+use wcf\system\cache\builder\BotcheckQuestionCacheBuilder;
 use wcf\system\event\IEventListener;
 use wcf\system\exception\UserInputException;
 use wcf\system\WCF;
