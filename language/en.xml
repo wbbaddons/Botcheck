@@ -13,6 +13,8 @@
 	</category>
 
 	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.botcheck_question_ignorecase"><![CDATA[Ignore case]]></item>
+		<item name="wcf.acp.option.botcheck_question_ignorecase.description"><![CDATA[The capitalization will be ignored on validation of the answer.]]></item>
 		<item name="wcf.acp.option.botcheck_question_newonfail"><![CDATA[New question on wrong answer]]></item>
 		<item name="wcf.acp.option.botcheck_question_newonfail.description"><![CDATA[If a question is answered wrong, a new question will be used instead of the same again.]]></item>
 		<item name="wcf.acp.option.category.security.botcheck"><![CDATA[Botcheck]]></item>

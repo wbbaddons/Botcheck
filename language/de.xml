@@ -13,6 +13,8 @@
 	</category>
 
 	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.botcheck_question_ignorecase"><![CDATA[Ignoriere Groß- und Kleinschreibung]]></item>
+		<item name="wcf.acp.option.botcheck_question_ignorecase.description"><![CDATA[Bei der Überprüfung der Antwort wird die Groß- und Kleinschreibung ignoriert.]]></item>
 		<item name="wcf.acp.option.botcheck_question_newonfail"><![CDATA[Neue Frage bei falscher Antwort]]></item>
 		<item name="wcf.acp.option.botcheck_question_newonfail.description"><![CDATA[Bei falscher Beantwortung einer Frage, wird eine neue Frage gestellt, anstatt der gleichen.]]></item>
 		<item name="wcf.acp.option.category.security.botcheck"><![CDATA[Botcheck]]></item>

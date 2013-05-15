@@ -126,10 +126,20 @@ class RegisterFormBotcheckListener implements IEventListener {
 	 * Handles the validate event.
 	 */
 	protected function validate() {
+		$answer = $this->answer;
+
 		$answers = StringUtil::unifyNewlines($this->question->answers);
 		$answers = ArrayUtil::trim(explode("\n", $answers));
 
-		if (array_search($this->answer, $answers) === false) {
+		if (BOTCHECK_QUESTION_IGNORECASE) {
+			foreach ($answers as $key => $value) {
+				$answers[$key] = StringUtil::toLowerCase($value);
+			}
+			
+			$answer = StringUtil::toLowerCase($answer);
+		}
+
+		if (array_search($answer, $answers) === false) {
 			$this->eventObj->errorType['answer'] = 'false';
 
 			if (BOTCHECK_QUESTION_NEWONFAIL) {
