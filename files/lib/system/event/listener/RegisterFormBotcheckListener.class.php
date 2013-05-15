@@ -107,8 +107,9 @@ class RegisterFormBotcheckListener implements IEventListener {
 	 * Handles the readFormParameters event.
 	 */
 	protected function readFormParameters() {
-		$this->question = $questions[$questionID];
 		$questionID = WCF::getSession()->getVar('questionID');
+		
+		$questions = $this->getQuestions();
 		$this->question = $questions[$questionID];
 
 		if (isset($_POST['answer'])) $this->answer = StringUtil::trim($_POST['answer']);
