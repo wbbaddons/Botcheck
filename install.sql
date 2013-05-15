@@ -5,3 +5,6 @@ CREATE TABLE wcf1_botcheck_question (
 	question VARCHAR(255) NOT NULL,
 	answers TEXT NOT NULL
 );
+
+-- sample questions
+INSERT INTO wcf1_botcheck_question (question, answers) VALUES ('2 + 2 = ?', '4');
