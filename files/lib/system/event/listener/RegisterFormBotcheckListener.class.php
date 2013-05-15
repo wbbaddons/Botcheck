@@ -5,6 +5,7 @@ use wcf\system\cache\builder\BotcheckQuestionCacheBuilder;
 use wcf\system\event\IEventListener;
 use wcf\system\exception\UserInputException;
 use wcf\system\WCF;
+use wcf\util\ArrayUtil;
 use wcf\util\StringUtil;
 
 /**
@@ -117,8 +118,12 @@ class RegisterFormBotcheckListener implements IEventListener {
 	 * Handles the validate event.
 	 */
 	protected function validate() {
-		//TODO: implement validation
-		throw new UserInputException('answer', 'false');
+		$answers = StringUtil::unifyNewlines($this->question->answers);
+		$answers = ArrayUtil::trim(explode("\n", $answers));
+
+		if (array_search($this->answer, $answers) === false) {
+			throw new UserInputException('answer', 'false');
+		}
 
 		WCF::getSession()->register('botcheckQuestionSolved', true);
 	}
