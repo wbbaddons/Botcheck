@@ -134,6 +134,7 @@ class RegisterFormBotcheckListener implements IEventListener {
 
 			if (BOTCHECK_QUESTION_NEWONFAIL) {
 				$this->setQuestion();
+				$this->answer = '';
 			}
 
 			return;
