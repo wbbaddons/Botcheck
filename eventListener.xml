@@ -7,5 +7,29 @@
 			<listenerclassname>wcf\system\event\listener\RegisterFormBotcheckListener</listenerclassname>
 			<environment>user</environment>
 		</eventlistener>
+		<eventlistener>
+			<eventclassname>wcf\form\RegisterForm</eventclassname>
+			<eventname>readData</eventname>
+			<listenerclassname>wcf\system\event\listener\RegisterFormBotcheckListener</listenerclassname>
+			<environment>user</environment>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname>wcf\form\RegisterForm</eventclassname>
+			<eventname>readFormParameters</eventname>
+			<listenerclassname>wcf\system\event\listener\RegisterFormBotcheckListener</listenerclassname>
+			<environment>user</environment>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname>wcf\form\RegisterForm</eventclassname>
+			<eventname>validate</eventname>
+			<listenerclassname>wcf\system\event\listener\RegisterFormBotcheckListener</listenerclassname>
+			<environment>user</environment>
+		</eventlistener>
+		<eventlistener>
+			<eventclassname>wcf\form\RegisterForm</eventclassname>
+			<eventname>save</eventname>
+			<listenerclassname>wcf\system\event\listener\RegisterFormBotcheckListener</listenerclassname>
+			<environment>user</environment>
+		</eventlistener>
 	</import>
 </data>

@@ -9,15 +9,15 @@
 				{$question}
 			</dd>	
 		</dl>
-		<dl{if $errorType.botcheckQuestion|isset} class="formError"{/if}>
+		<dl{if $errorType.answer|isset} class="formError"{/if}>
 			<dt>
-				<label for="botcheckQuestion">{lang}wcf.botcheck.register.botcheckQuestion{/lang}</label>
+				<label for="answer">{lang}wcf.botcheck.register.answer{/lang}</label>
 			</dt>
 			<dd>
-				<input type="text" id="botcheckQuestion" name="botcheckQuestion" value="{$botcheckQuestion}" required="required" class="medium" />
-				{if $errorType.botcheckQuestion|isset}
+				<input type="text" id="answer" name="answer" value="{$answer}" required="required" class="medium" />
+				{if $errorType.answer|isset}
 					<small class="innerError">
-						{if $errorType.botcheckQuestion == 'notEqual'}{lang}wcf.botcheck.register.botcheckQuestion.error.notEqual{/lang}{/if}
+						{if $errorType.answer == 'notEqual'}{lang}wcf.botcheck.register.answer.error.notEqual{/lang}{/if}
 					</small>
 				{/if}
 			</dd>
