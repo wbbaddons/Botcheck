@@ -108,7 +108,7 @@ class RegisterFormBotcheckListener implements IEventListener {
 	 */
 	protected function readFormParameters() {
 		$questionID = WCF::getSession()->getVar('questionID');
-		
+
 		$questions = $this->getQuestions();
 		$this->question = $questions[$questionID];
 
@@ -123,7 +123,9 @@ class RegisterFormBotcheckListener implements IEventListener {
 		$answers = ArrayUtil::trim(explode("\n", $answers));
 
 		if (array_search($this->answer, $answers) === false) {
-			throw new UserInputException('answer', 'false');
+			$this->eventObj->errorType['answer'] = 'false';
+
+			return;
 		}
 
 		WCF::getSession()->register('botcheckQuestionSolved', true);
