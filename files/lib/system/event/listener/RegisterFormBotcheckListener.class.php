@@ -87,19 +87,26 @@ class RegisterFormBotcheckListener implements IEventListener {
 	}
 
 	/**
+	 * Sets a random question.
+	 */
+	protected function setQuestion() {
+		$questions = $this->getQuestions();
+		$questionIDs = array_keys($questions);
+
+		$i = mt_rand(0, count($questionIDs) - 1);
+		$questionID = $questionIDs[$i];
+
+		$this->question = $questions[$questionID];
+		WCF::getSession()->register('questionID', $questionID);
+	}
+
+	/**
 	 * Handles the readData event.
 	 * This is only called in UserGroupEditForm.
 	 */
 	protected function readData() {
 		if (empty($_POST)) {
-			$questions = $this->getQuestions();
-			$questionIDs = array_keys($questions);
-
-			$i = mt_rand(0, count($questionIDs) - 1);
-			$questionID = $questionIDs[$i];
-
-			$this->question = $questions[$questionID];
-			WCF::getSession()->register('questionID', $questionID);
+			$this->setQuestion();
 		}
 	}
 
@@ -124,6 +131,10 @@ class RegisterFormBotcheckListener implements IEventListener {
 
 		if (array_search($this->answer, $answers) === false) {
 			$this->eventObj->errorType['answer'] = 'false';
+
+			if (BOTCHECK_QUESTION_NEWONFAIL) {
+				$this->setQuestion();
+			}
 
 			return;
 		}

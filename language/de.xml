@@ -13,6 +13,10 @@
 	</category>
 
 	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.botcheck_question_newonfail"><![CDATA[Neue Frage bei falscher Antwort]]></item>
+		<item name="wcf.acp.option.botcheck_question_newonfail.description"><![CDATA[Bei falscher Beantwortung einer Frage, wird eine neue Frage gestellt, anstatt der gleichen.]]></item>
+		<item name="wcf.acp.option.category.security.botcheck"><![CDATA[Botcheck]]></item>
+		<item name="wcf.acp.option.category.security.botcheck.registration"><![CDATA[Registrierung]]></item>
 		<item name="wcf.acp.option.module_user_botcheck"><![CDATA[Botcheck Fragen]]></item>
 		<item name="wcf.acp.option.module_user_botcheck.description"><![CDATA[Stellt bei der Registrierung vordefinierte Fragen um Bots zu erkennen.]]></item>
 	</category>
