@@ -3,7 +3,7 @@ namespace wcf\data\botcheck;
 
 use wcf\data\DatabaseObjectEditor;
 use wcf\data\IEditableCachedObject;
-use wcf\system\cache\builder\BotQuestionCacheBuilder;
+use wcf\system\cache\builder\BotcheckQuestionCacheBuilder;
 
 /**
  * Provides functions to edit questions.
