@@ -7,4 +7,6 @@ CREATE TABLE wcf1_botcheck_question (
 );
 
 -- sample questions
+INSERT INTO wcf1_botcheck_question (question, answers) VALUES ('1 + 1 = ?', '2');
 INSERT INTO wcf1_botcheck_question (question, answers) VALUES ('2 + 2 = ?', '4');
+INSERT INTO wcf1_botcheck_question (question, answers) VALUES ('3 + 3 = ?', '6');
