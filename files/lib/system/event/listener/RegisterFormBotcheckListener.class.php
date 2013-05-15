@@ -80,7 +80,7 @@ class RegisterFormBotcheckListener implements IEventListener {
 	 */
 	protected function assignVariables() {
 		WCF::getTPL()->assign(array(
-			'question' => 'Testfrage',
+			'question' => $this->question,
 			'answer' => $this->answer,
 		));
 	}
