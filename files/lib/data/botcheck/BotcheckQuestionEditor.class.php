@@ -2,9 +2,8 @@
 namespace wcf\data\botcheck;
 
 use wcf\data\DatabaseObjectEditor;
-
-// use wcf\data\IEditableCachedObject;
-// use wcf\system\cache\builder\BotQuestionCacheBuilder;
+use wcf\data\IEditableCachedObject;
+use wcf\system\cache\builder\BotQuestionCacheBuilder;
 
 /**
  * Provides functions to edit questions.
@@ -15,8 +14,6 @@ use wcf\data\DatabaseObjectEditor;
  * @package		info.codingcorner.wcf.user.botcheck
  * @subpackage	data.botcheck
  * @category	Community Framework
- * 
- * @todo		TODO: implement caching (prepared)
  */
 class BotcheckQuestionEditor extends DatabaseObjectEditor implements IEditableCachedObject {
 	/**
