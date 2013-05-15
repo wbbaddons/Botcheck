@@ -26,4 +26,13 @@
 		<item name="wcf.acp.botcheck.question.noneAvailable"><![CDATA[There are no questions yet.]]></item>
 		<item name="wcf.acp.botcheck.question.question"><![CDATA[Question]]></item>
 	</category>
+
+	<!-- USER -->
+	<category name="wcf.botcheck.register">
+		<item name="wcf.botcheck.register.answer"><![CDATA[Frage]]></item>
+		<item name="wcf.botcheck.register.answer.error.false"><![CDATA[Please enter the correct answer.]]></item>
+		<item name="wcf.botcheck.register.description"><![CDATA[Please answer the following question.]]></item>
+		<item name="wcf.botcheck.register.question"><![CDATA[Question]]></item>
+		<item name="wcf.botcheck.register.title"><![CDATA[Botcheck]]></item>
+	</category>
 </language>

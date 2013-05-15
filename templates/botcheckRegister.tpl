@@ -18,7 +18,7 @@
 				<input type="text" id="answer" name="answer" value="{$answer}" required="required" class="medium" />
 				{if $errorType.answer|isset}
 					<small class="innerError">
-						{if $errorType.answer == 'notEqual'}{lang}wcf.botcheck.register.answer.error.notEqual{/lang}{/if}
+						{if $errorType.answer == 'false'}{lang}wcf.botcheck.register.answer.error.false{/lang}{/if}
 					</small>
 				{/if}
 			</dd>
