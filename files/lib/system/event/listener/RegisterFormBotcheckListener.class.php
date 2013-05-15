@@ -48,7 +48,7 @@ class RegisterFormBotcheckListener implements IEventListener {
 	protected $enabled = MODULE_USER_BOTCHECK;
 	
 	protected function getQuestions() {
-		if ($this->questions) {
+		if ($this->questions === null) {
 			$this->questions = BotcheckQuestionCacheBuilder::getInstance()->getData();
 		}
 
