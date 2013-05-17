@@ -1,5 +1,5 @@
 <?php
-namespace wcf\data\botcheck;
+namespace wcf\data\botcheck\question;
 
 use wcf\data\language\item\LanguageItemAction;
 use wcf\data\AbstractDatabaseObjectAction;
@@ -13,14 +13,14 @@ use wcf\system\WCF;
  * @copyright	2013 Markus Bartz
  * @license		GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @package		info.codingcorner.wcf.user.botcheck
- * @subpackage	data.botcheck
+ * @subpackage	data.botcheck.question
  * @category	Community Framework
  */
 class BotcheckQuestionAction extends AbstractDatabaseObjectAction {
 	/**
 	 * @see	wcf\data\AbstractDatabaseObjectAction::$className
 	 */
-	protected $className = 'wcf\data\botcheck\BotcheckQuestionEditor';
+	protected $className = 'wcf\data\botcheck\question\BotcheckQuestionEditor';
 	
 	/**
 	 * @see	wcf\data\AbstractDatabaseObjectAction::$permissionsCreate

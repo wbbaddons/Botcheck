@@ -1,8 +1,8 @@
 <?php
 namespace wcf\acp\form;
 
-use wcf\data\botcheck\BotcheckQuestionAction;
-use wcf\data\botcheck\BotcheckQuestionEditor;
+use wcf\data\botcheck\question\BotcheckQuestionAction;
+use wcf\data\botcheck\question\BotcheckQuestionEditor;
 use wcf\data\package\PackageCache;
 use wcf\form\AbstractForm;
 use wcf\system\exception\UserInputException;

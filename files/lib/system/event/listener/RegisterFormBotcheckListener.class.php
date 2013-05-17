@@ -33,7 +33,7 @@ class RegisterFormBotcheckListener implements IEventListener {
 
 	/**
 	 * question
-	 * @var wcf\data\botcheck\BotcheckQuestion
+	 * @var wcf\data\botcheck\question\BotcheckQuestion
 	 */
 	protected $question = null;
 

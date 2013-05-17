@@ -1,5 +1,5 @@
 <?php
-namespace wcf\data\botcheck;
+namespace wcf\data\botcheck\question;
 
 use wcf\data\DatabaseObjectList;
 
@@ -10,12 +10,12 @@ use wcf\data\DatabaseObjectList;
  * @copyright	2013 Markus Bartz
  * @license		GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @package		info.codingcorner.wcf.user.botcheck
- * @subpackage	data.botcheck
+ * @subpackage	data.botcheck.question
  * @category	Community Framework
  */
 class BotcheckQuestionList extends DatabaseObjectList {
 	/**
 	 * @see	wcf\data\DatabaseObjectList::$className
 	 */
-	public $className = 'wcf\data\botcheck\BotcheckQuestion';
+	public $className = 'wcf\data\botcheck\question\BotcheckQuestion';
 }

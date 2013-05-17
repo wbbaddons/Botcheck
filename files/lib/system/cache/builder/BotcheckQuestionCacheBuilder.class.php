@@ -1,7 +1,7 @@
 <?php
 namespace wcf\system\cache\builder;
 
-use wcf\data\botcheck\BotcheckQuestionList;
+use wcf\data\botcheck\question\BotcheckQuestionList;
 
 /**
  * Caches the botcheck questions.

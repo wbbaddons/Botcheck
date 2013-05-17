@@ -1,5 +1,5 @@
 <?php
-namespace wcf\data\botcheck;
+namespace wcf\data\botcheck\question;
 
 use wcf\data\DatabaseObject;
 use wcf\system\request\IRouteController;
@@ -12,7 +12,7 @@ use wcf\system\WCF;
  * @copyright	2013 Markus Bartz
  * @license		GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @package		info.codingcorner.wcf.user.botcheck
- * @subpackage	data.botcheck
+ * @subpackage	data.botcheck.question
  * @category	Community Framework
  */
 class BotcheckQuestion extends DatabaseObject implements IRouteController {

@@ -1,8 +1,8 @@
 <?php
 namespace wcf\acp\form;
 
-use wcf\data\botcheck\BotcheckQuestion;
-use wcf\data\botcheck\BotcheckQuestionAction;
+use wcf\data\botcheck\question\BotcheckQuestion;
+use wcf\data\botcheck\question\BotcheckQuestionAction;
 use wcf\data\package\PackageCache;
 use wcf\form\AbstractForm;
 use wcf\system\exception\IllegalLinkException;
@@ -38,7 +38,7 @@ class BotcheckQuestionEditForm extends BotcheckQuestionAddForm {
 	
 	/**
 	 * question object
-	 * @var	wcf\data\botcheck\BotcheckQuestion
+	 * @var	wcf\data\botcheck\question\BotcheckQuestion
 	 */
 	public $questionObj = null;
 	
