@@ -21,7 +21,7 @@ use wcf\util\StringUtil;
 class RegisterFormBotcheckListener implements IEventListener {
 	/**
 	 * question cache
-	 * @var array<wcf\data\botcheck\BotcheckQuestion>
+	 * @var array<wcf\data\botcheck\question\BotcheckQuestion>
 	 */
 	protected $questions = null;
 

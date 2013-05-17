@@ -37,5 +37,5 @@ class BotcheckQuestionListPage extends SortablePage {
 	/**
 	 * @see	wcf\page\MultipleLinkPage::$objectListClassName
 	 */
-	public $objectListClassName = 'wcf\data\botcheck\BotcheckQuestionList';
+	public $objectListClassName = 'wcf\data\botcheck\question\BotcheckQuestionList';
 }
