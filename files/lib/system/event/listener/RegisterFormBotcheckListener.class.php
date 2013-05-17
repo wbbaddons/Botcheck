@@ -135,8 +135,8 @@ class RegisterFormBotcheckListener implements IEventListener {
 		}
 
 		if (BOTCHECK_QUESTION_IGNOREWHITESPACES) {
-			$answers = preg_replace('\h+', '', $answers);
-			$answer = preg_replace('\h+', '', $answer);
+			$answers = preg_replace('~\h+~', '', $answers);
+			$answer = preg_replace('~\h+~', '', $answer);
 		}
 
 		$answers = ArrayUtil::trim(explode("\n", $answers));
