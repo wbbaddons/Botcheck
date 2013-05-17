@@ -128,7 +128,6 @@ class RegisterFormBotcheckListener implements IEventListener {
 	protected function validate() {
 		$answer = $this->answer;
 		$answers = StringUtil::unifyNewlines($this->question->answers);
-		
 
 		if (BOTCHECK_QUESTION_IGNORECASE) {
 			$answers = StringUtil::toLowerCase($answers);
