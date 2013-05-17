@@ -143,7 +143,7 @@ class RegisterFormBotcheckListener implements IEventListener {
 
 		$error = true;
 		if ($this->question->regexp) {
-			for ($answers as $pattern) {
+			foreach ($answers as $pattern) {
 				if (preg_match($pattern, $answer) == 1) {
 					$error = false;
 					break;
