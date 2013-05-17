@@ -3,7 +3,7 @@
 <script type="text/javascript">
 	//<![CDATA[
 	$(function() {
-		new WCF.Action.Delete('wcf\\data\\botcheck\\BotcheckQuestionAction', '.jsQuestionRow');
+		new WCF.Action.Delete('wcf\\data\\botcheck\\question\\BotcheckQuestionAction', '.jsQuestionRow');
 	});
 	//]]>
 </script>
