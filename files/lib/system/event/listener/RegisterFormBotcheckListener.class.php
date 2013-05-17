@@ -4,6 +4,7 @@ namespace wcf\system\event\listener;
 use wcf\system\cache\builder\BotcheckQuestionCacheBuilder;
 use wcf\system\event\IEventListener;
 use wcf\system\exception\UserInputException;
+use wcf\system\Regex;
 use wcf\system\WCF;
 use wcf\util\ArrayUtil;
 use wcf\util\StringUtil;
@@ -135,8 +136,10 @@ class RegisterFormBotcheckListener implements IEventListener {
 		}
 
 		if (BOTCHECK_QUESTION_IGNOREWHITESPACES && !$this->question->regexp) {
-			$answers = preg_replace('~\h+~', '', $answers);
-			$answer = preg_replace('~\h+~', '', $answer);
+			$whitespaceRegexp = new Regex('\h+');
+
+			$answers = $whitespaceRegexp->replace($answers, '');
+			$answer = $whitespaceRegexp->replace($answer, '');
 		}
 
 		$answers = ArrayUtil::trim(explode("\n", $answers));
@@ -144,8 +147,9 @@ class RegisterFormBotcheckListener implements IEventListener {
 		$error = true;
 		if ($this->question->regexp) {
 			foreach ($answers as $pattern) {
-				if (preg_match($pattern, $answer) == 1) {
+				if (Regex::compile($pattern, ((BOTCHECK_QUESTION_IGNORECASE) ? (Regex::CASE_INSENSITIVE) : (Regex::MODIFIER_NONE)))->match($answer) == 1) {
 					$error = false;
+					
 					break;
 				}
 			}
