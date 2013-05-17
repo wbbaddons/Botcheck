@@ -65,6 +65,14 @@
 			</dl>
 			{include file='multipleLanguageInputJavascript' elementIdentifier='answers' forceSelection=false}
 			
+			<dl>
+				<dt class="reversed"><label for="regexp">{lang}wcf.acp.botcheck.question.regexp{/lang}</label></dt>
+				<dd>
+					<input type="checkbox" id="regexp" name="regexp" value="1"{if $regexp} checked="checked"{/if} />
+					<small>{lang}wcf.acp.botcheck.question.regexp.description{/lang}</small>
+				</dd>
+			</dl>
+			
 			{event name='dataFields'}
 		</fieldset>
 		

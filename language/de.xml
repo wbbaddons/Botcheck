@@ -14,9 +14,9 @@
 
 	<category name="wcf.acp.option">
 		<item name="wcf.acp.option.botcheck_question_ignorecase"><![CDATA[Ignoriere Groß- und Kleinschreibung]]></item>
-		<item name="wcf.acp.option.botcheck_question_ignorecase.description"><![CDATA[Bei der Überprüfung der Antwort wird die Groß- und Kleinschreibung ignoriert.]]></item>
+		<item name="wcf.acp.option.botcheck_question_ignorecase.description"><![CDATA[Bei der Überprüfung der Antwort wird die Groß- und Kleinschreibung ignoriert. (Inaktiv bei regulären Ausdrücken als Antwort.)]]></item>
 		<item name="wcf.acp.option.botcheck_question_ignorewhitespaces"><![CDATA[Ignoriere nicht „unsichbare“ Zeichen]]></item>
-		<item name="wcf.acp.option.botcheck_question_ignorewhitespaces.description"><![CDATA[Bei der Überprüfung der Antwort werden „unsichtbare“ Zeichen wie Leerzeichen und Tabulatoren ignoriert.]]></item>
+		<item name="wcf.acp.option.botcheck_question_ignorewhitespaces.description"><![CDATA[Bei der Überprüfung der Antwort werden „unsichtbare“ Zeichen wie Leerzeichen und Tabulatoren ignoriert. (Inaktiv bei regulären Ausdrücken als Antwort.)]]></item>
 		<item name="wcf.acp.option.botcheck_question_newonfail"><![CDATA[Neue Frage bei falscher Antwort]]></item>
 		<item name="wcf.acp.option.botcheck_question_newonfail.description"><![CDATA[Bei falscher Beantwortung einer Frage, wird eine neue Frage gestellt, anstatt der gleichen.]]></item>
 		<item name="wcf.acp.option.category.security.botcheck"><![CDATA[Botcheck]]></item>
@@ -34,6 +34,8 @@
 		<item name="wcf.acp.botcheck.question.list"><![CDATA[Fragen]]></item>
 		<item name="wcf.acp.botcheck.question.noneAvailable"><![CDATA[Es wurde noch keine Frage hinzugefügt.]]></item>
 		<item name="wcf.acp.botcheck.question.question"><![CDATA[Frage]]></item>
+		<item name="wcf.acp.botcheck.question.regexp"><![CDATA[Interpretiert Antworten als reguläre Ausdrücke]]></item>
+		<item name="wcf.acp.botcheck.question.regexp.description"><![CDATA[Bei Aktivierung dieser Option werden Antworten als <a href="http://de.wikipedia.org/wiki/Regul%C3%A4rer_Ausdruck">reguläre Ausdrücke</a> interpretiert. Bitte beachten Sie die <a href="http://www.php.net/manual/de/function.preg-replace-callback.php">PHP PCRE Dokumentation</a>. <strong>Verwenden Sie diese Option nur, wenn Sie genau wissen, was sie tun.</strong>]]></item>
 	</category>
 
 	<!-- USER -->
