@@ -83,7 +83,7 @@ class BotcheckQuestionEditForm extends BotcheckQuestionAddForm {
 		$this->objectAction = new BotcheckQuestionAction(array($this->questionID), 'update', array('data' => array(
 			'question' => $this->question,
 			'answers' => $this->answers,
-			'regexp' => $this->regexp,
+			'regex' => $this->regex,
 		)));
 		$this->objectAction->executeAction();
 		
@@ -108,7 +108,7 @@ class BotcheckQuestionEditForm extends BotcheckQuestionAddForm {
 			I18nHandler::getInstance()->setOptions('answers', PackageCache::getInstance()->getPackageID('info.codingcorner.wcf.user.botcheck'), $this->questionObj->answers, 'wcf.acp.botcheck.answers\d+');
 			$this->answers = $this->questionObj->answers;
 
-			$this->regexp = $this->questionObj->regexp;
+			$this->regex = $this->questionObj->regex;
 		}
 	}
 	

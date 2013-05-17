@@ -34,8 +34,8 @@
 		<item name="wcf.acp.botcheck.question.list"><![CDATA[Fragen]]></item>
 		<item name="wcf.acp.botcheck.question.noneAvailable"><![CDATA[Es wurde noch keine Frage hinzugefügt.]]></item>
 		<item name="wcf.acp.botcheck.question.question"><![CDATA[Frage]]></item>
-		<item name="wcf.acp.botcheck.question.regexp"><![CDATA[Interpretiert Antworten als reguläre Ausdrücke]]></item>
-		<item name="wcf.acp.botcheck.question.regexp.description"><![CDATA[Bei Aktivierung dieser Option werden Antworten als <a href="http://de.wikipedia.org/wiki/Regul%C3%A4rer_Ausdruck">reguläre Ausdrücke</a> interpretiert. Bitte beachten Sie die <a href="http://www.php.net/manual/de/function.preg-replace-callback.php">PHP PCRE Dokumentation</a>. <strong>Verwenden Sie diese Option nur, wenn Sie genau wissen, was sie tun.</strong>]]></item>
+		<item name="wcf.acp.botcheck.question.regex"><![CDATA[Interpretiert Antworten als reguläre Ausdrücke]]></item>
+		<item name="wcf.acp.botcheck.question.regex.description"><![CDATA[Bei Aktivierung dieser Option werden Antworten als <a href="http://de.wikipedia.org/wiki/Regul%C3%A4rer_Ausdruck">reguläre Ausdrücke</a> interpretiert. Bitte beachten Sie die <a href="http://www.php.net/manual/de/function.preg-replace-callback.php">PHP PCRE Dokumentation</a>. <strong>Verwenden Sie diese Option nur, wenn Sie genau wissen, was sie tun.</strong>]]></item>
 	</category>
 
 	<!-- USER -->

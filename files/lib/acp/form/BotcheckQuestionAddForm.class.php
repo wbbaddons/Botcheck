@@ -43,10 +43,10 @@ class BotcheckQuestionAddForm extends AbstractForm {
 	public $answers = '';
 
 	/**
-	 * regexp value
+	 * regex value
 	 * @var boolean
 	 */
-	public $regexp = false;
+	public $regex = false;
 	
 	/**
 	 * @see	wcf\page\IPage::readParameters()
@@ -68,7 +68,7 @@ class BotcheckQuestionAddForm extends AbstractForm {
 		
 		if (I18nHandler::getInstance()->isPlainValue('question')) $this->question = I18nHandler::getInstance()->getValue('question');
 		if (I18nHandler::getInstance()->isPlainValue('answers')) $this->answers = I18nHandler::getInstance()->getValue('answers');
-		if (isset($_POST['regexp'])) $this->regexp = true;
+		if (isset($_POST['regex'])) $this->regex = true;
 	}
 	
 	/**
@@ -108,7 +108,7 @@ class BotcheckQuestionAddForm extends AbstractForm {
 		$this->objectAction = new BotcheckQuestionAction(array(), 'create', array('data' => array(
 			'question' => $this->question,
 			'answers' => $this->answers,
-			'regexp' => $this->regexp,
+			'regex' => $this->regex,
 		)));
 		$this->objectAction->executeAction();
 		
@@ -139,7 +139,7 @@ class BotcheckQuestionAddForm extends AbstractForm {
 		
 		// reset values
 		$this->question = $this->answers = '';
-		$this->regexp = false;
+		$this->regex = false;
 		
 		I18nHandler::getInstance()->reset();
 		
@@ -161,7 +161,7 @@ class BotcheckQuestionAddForm extends AbstractForm {
 			'action' => 'add',
 			'question' => $this->question,
 			'answers' => $this->answers,
-			'regexp' => $this->regexp,
+			'regex' => $this->regex,
 		));
 	}
 }
