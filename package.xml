@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <package name="info.codingcorner.wcf.user.botcheck" xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/package.xsd">
 	<packageinformation>
-		<packagename>Botcheck Questions</packagename>
+		<packagename>Botcheck</packagename>
 		<packagename language="de">Botcheck Fragen</packagename>
 		<packagedescription>Asks predefined questions in the registration form to prevent registrations by bots.</packagedescription>
 		<packagedescription language="de">Stellt bei der Registrierung vordefinierte Fragen um Bots zu erkennen.</packagedescription>
