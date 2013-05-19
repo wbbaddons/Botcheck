@@ -5,7 +5,7 @@ Botcheck
 
 This package asks predefined questions in the registration form to prevent registrations by bots.
 
-The administrator can define edit existing questions and answers or add new in the admin control panel.
+The administrator can add/edit questions and answers in the admin control panel.
 
 License
 -------
