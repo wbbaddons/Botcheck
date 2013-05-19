@@ -35,7 +35,7 @@
 		<item name="wcf.acp.botcheck.question.noneAvailable"><![CDATA[There are no questions yet.]]></item>
 		<item name="wcf.acp.botcheck.question.question"><![CDATA[Question]]></item>
 		<item name="wcf.acp.botcheck.question.regex"><![CDATA[Interpret answers as regular expressions]]></item>
-		<item name="wcf.acp.botcheck.question.regex.description"><![CDATA[With activating this option, the answer lines will be treated as <a href="{@$__wcf->getPath('wcf')}acp/dereferrer.php?url={"http://en.wikipedia.org/wiki/Regular_expression"|rawurlencode}" class="externalURL">regular expressions</a>. See the <a href="{@$__wcf->getPath('wcf')}acp/dereferrer.php?url={"http://www.php.net/manual/en/function.preg-replace-callback.php"|rawurlencode}" class="externalURL">PHP PCRE documentation</a> for informations about the syntax. <strong>Only use this if you know what you do.</strong>]]></item>
+		<item name="wcf.acp.botcheck.question.regex.description"><![CDATA[With activating this option, the answer lines will be treated as <a href="{@$__wcf->getPath('wcf')}acp/dereferrer.php?url={"http://en.wikipedia.org/wiki/Regular_expression"|rawurlencode}" class="externalURL">regular expressions</a>. See the <a href="{@$__wcf->getPath('wcf')}acp/dereferrer.php?url={"http://www.php.net/manual/en/reference.pcre.pattern.syntax.php"|rawurlencode}" class="externalURL">PHP PCRE documentation</a> for informations about the syntax. <strong>Only use this if you know what you do.</strong>]]></item>
 	</category>
 
 	<!-- USER -->
