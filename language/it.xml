@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<language xmlns="http://www.woltlab.com" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.woltlab.com http://www.woltlab.com/XSD/maelstrom/language.xsd" languagecode="it">
+  <!-- ACP -->
+	<category name="wcf.acp.group">
+		<item name="wcf.acp.group.option.admin.user.botcheck.canManageQuestions"><![CDATA[Può gestire le domande]]></item>
+		<item name="wcf.acp.group.option.category.admin.user.botcheck"><![CDATA[Botcheck]]></item>
+	</category>
+
+	<category name="wcf.acp.menu">
+		<item name="wcf.acp.menu.link.user.botcheck"><![CDATA[Botcheck]]></item>
+		<item name="wcf.acp.menu.link.user.botcheck.question.add"><![CDATA[Aggiungi Domanda]]></item>
+		<item name="wcf.acp.menu.link.user.botcheck.question.list"><![CDATA[Lista Domande]]></item>
+	</category>
+
+	<category name="wcf.acp.option">
+		<item name="wcf.acp.option.botcheck_question_ignorecase"><![CDATA[Ignora caso]]></item>
+		<item name="wcf.acp.option.botcheck_question_ignorecase.description"><![CDATA[La capitalizzazione viene ignorata sulla convalida della risposta.]]></item>
+		<item name="wcf.acp.option.botcheck_question_ignorewhitespaces"><![CDATA[Ignora caretteri “invisibili”]]></item>
+		<item name="wcf.acp.option.botcheck_question_ignorewhitespaces.description"><![CDATA[Tutti i caratteri “invisibili”, lo spazio e le schede verranno ignorate sulla convalida della risposta. (Accesso inattivo per domande con le espressioni regolari per le risposte.)]]></item>
+		<item name="wcf.acp.option.botcheck_question_newonfail"><![CDATA[Nuova domanda sulla risposta sbagliata]]></item>
+		<item name="wcf.acp.option.botcheck_question_newonfail.description"><![CDATA[Se si risponde male ad una domanda, una nuova domanda viene fatta al posto di quella..]]></item>
+		<item name="wcf.acp.option.category.security.botcheck"><![CDATA[Botcheck]]></item>
+		<item name="wcf.acp.option.category.security.botcheck.registration"><![CDATA[Registrazione]]></item>
+		<item name="wcf.acp.option.module_user_botcheck"><![CDATA[Domande Botcheck]]></item>
+		<item name="wcf.acp.option.module_user_botcheck.description"><![CDATA[Fa domande predefinite nel modulo di registrazione per evitare registrazioni da bot.]]></item>
+	</category>
+
+	<category name="wcf.acp.botcheck">
+		<item name="wcf.acp.botcheck.question.add"><![CDATA[Aggiungi Domanda]]></item>
+		<item name="wcf.acp.botcheck.question.answers"><![CDATA[Risposte]]></item>
+		<item name="wcf.acp.botcheck.question.answers.description"><![CDATA[Una risposta per linea.]]></item>
+		<item name="wcf.acp.botcheck.question.delete.sure"><![CDATA[Vuoi veramente cancellare la domanda “{$question}”?]]></item>
+		<item name="wcf.acp.botcheck.question.edit"><![CDATA[Modifica Domanda]]></item>
+		<item name="wcf.acp.botcheck.question.list"><![CDATA[Domande]]></item>
+		<item name="wcf.acp.botcheck.question.noneAvailable"><![CDATA[Al momento non ci sono domande.]]></item>
+		<item name="wcf.acp.botcheck.question.question"><![CDATA[Domande]]></item>
+		<item name="wcf.acp.botcheck.question.regex"><![CDATA[Interpretare le domande come le espressioni regolari]]></item>
+		<item name="wcf.acp.botcheck.question.regex.description"><![CDATA[Con l´attivazione di questa opzione, le linee di risposta saranno trattate come <a href="{@$__wcf->getPath('wcf')}acp/dereferrer.php?url={"http://it.wikipedia.org/wiki/Regular_expression"|rawurlencode}" class="externalURL">Espressioni regolari</a>. Guarda il <a href="{@$__wcf->getPath('wcf')}acp/dereferrer.php?url={"http://www.php.net/manual/it/reference.pcre.pattern.syntax.php"|rawurlencode}" class="externalURL">Documentazione PHP PCRE</a> per le informazioni sulla sintassi. <strong>Utilizzalo solo se sai quello che fai.</strong>]]></item>
+	</category>
+
+	<!-- USER -->
+	<category name="wcf.botcheck.register">
+		<item name="wcf.botcheck.register.answer"><![CDATA[Risposta]]></item>
+		<item name="wcf.botcheck.register.answer.error.false"><![CDATA[Inserisci la risposta corretta.]]></item>
+		<item name="wcf.botcheck.register.description"><![CDATA[Si prega di rispondere alla seguente domanda.]]></item>
+		<item name="wcf.botcheck.register.question"><![CDATA[Domanda]]></item>
+		<item name="wcf.botcheck.register.title"><![CDATA[Botcheck]]></item>
+	</category>
+</language>
