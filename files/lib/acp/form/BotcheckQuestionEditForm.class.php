@@ -83,7 +83,7 @@ class BotcheckQuestionEditForm extends BotcheckQuestionAddForm {
 		$this->objectAction = new BotcheckQuestionAction(array($this->questionID), 'update', array('data' => array(
 			'question' => $this->question,
 			'answers' => $this->answers,
-			'regex' => $this->regex,
+			'regex' => ($this->regex ? 1 : 0),
 		)));
 		$this->objectAction->executeAction();
 		

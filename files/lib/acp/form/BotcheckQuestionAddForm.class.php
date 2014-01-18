@@ -108,7 +108,7 @@ class BotcheckQuestionAddForm extends AbstractForm {
 		$this->objectAction = new BotcheckQuestionAction(array(), 'create', array('data' => array(
 			'question' => $this->question,
 			'answers' => $this->answers,
-			'regex' => $this->regex,
+			'regex' => ($this->regex ? 1 : 0),
 		)));
 		$this->objectAction->executeAction();
 		
