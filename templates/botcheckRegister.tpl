@@ -8,7 +8,7 @@
 			</dt>
 			<dd>
 				{$question}
-			</dd>	
+			</dd>
 		</dl>
 		<dl{if $errorType.answer|isset} class="formError"{/if}>
 			<dt>

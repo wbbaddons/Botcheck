@@ -11,9 +11,9 @@ use wcf\system\WCF;
 
 /**
  * Shows the question edit form.
- * 
- * @author		Markus Bartz <roul@codingcorner.info>
- * @copyright	2013 Markus Bartz
+ *
+ * @author		Markus Zhang <roul@codingcorner.info>
+ * @copyright	2013 Markus Zhang
  * @license		GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @package		info.codingcorner.wcf.user.botcheck
  * @subpackage	acp.form

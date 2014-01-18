@@ -5,22 +5,22 @@
 		<packagename language="de">Botcheck Fragen</packagename>
 		<packagedescription>Asks predefined questions in the registration form to prevent registrations by bots.</packagedescription>
 		<packagedescription language="de">Stellt bei der Registrierung vordefinierte Fragen um Bots zu erkennen.</packagedescription>
-		<version>1.0.0 Alpha 1</version>
-		<date>2013-05-13</date>
+		<version>1.0.0 Beta 1</version>
+		<date>2014-01-18</date>
 	</packageinformation>
 
 	<authorinformation>
-		<author>Markus Bartz (RouL)</author>
+		<author>Markus Zhang</author>
 		<authorurl>http://codingcorner.info/</authorurl>
 	</authorinformation>
 
 	<requiredpackages>
-		<requiredpackage minversion="2.0.0 Alpha 1">com.woltlab.wcf</requiredpackage>
+		<requiredpackage minversion="2.0.1">com.woltlab.wcf</requiredpackage>
 	</requiredpackages>
 
 	<excludedpackages>
-		<excludedpackage>de.cwalz.securityQuestion</excludedpackage>
-	</excludedpackages>	
+		<excludedpackage version="1.0.0">de.cwalz.securityQuestion</excludedpackage>
+	</excludedpackages>
 
 	<instructions type="install">
 		<instruction type="sql">install.sql</instruction>

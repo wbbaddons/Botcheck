@@ -5,9 +5,9 @@ use wcf\data\botcheck\question\BotcheckQuestionList;
 
 /**
  * Caches the botcheck questions.
- * 
- * @author		Markus Bartz <roul@codingcorner.info>
- * @copyright	2013 Markus Bartz
+ *
+ * @author		Markus Zhang <roul@codingcorner.info>
+ * @copyright	2013 Markus Zhang
  * @license		GNU Lesser General Public License <http://opensource.org/licenses/lgpl-license.php>
  * @package		info.codingcorner.wcf.user.botcheck
  * @subpackage	system.cache.builder
