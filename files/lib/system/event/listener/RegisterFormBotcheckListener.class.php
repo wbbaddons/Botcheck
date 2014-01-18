@@ -94,7 +94,7 @@ class RegisterFormBotcheckListener implements IEventListener {
 		$questions = $this->getQuestions();
 		$questionIDs = array_keys($questions);
 
-		$i = mt_rand(0, count($questionIDs) - 1);
+		$i = MathUtil::getRandomValue(0, count($questionIDs) - 1);
 		$questionID = $questionIDs[$i];
 
 		$this->question = $questions[$questionID];
