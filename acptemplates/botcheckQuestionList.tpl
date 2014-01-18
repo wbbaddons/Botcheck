@@ -1,6 +1,6 @@
 {include file='header' pageTitle='wcf.acp.botcheck.question.list'}
 
-<script type="text/javascript">
+<script data-relocate="true">
 	//<![CDATA[
 	$(function() {
 		new WCF.Action.Delete('wcf\\data\\botcheck\\question\\BotcheckQuestionAction', '.jsQuestionRow');
