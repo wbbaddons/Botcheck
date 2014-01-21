@@ -5,8 +5,8 @@
 		<packagename language="de">Botcheck Fragen</packagename>
 		<packagedescription>Asks predefined questions in the registration form to prevent registrations by bots.</packagedescription>
 		<packagedescription language="de">Stellt bei der Registrierung vordefinierte Fragen um Bots zu erkennen.</packagedescription>
-		<version>1.0.0 RC 3</version>
-		<date>2014-01-18</date>
+		<version>1.0.0 RC 4</version>
+		<date>2014-01-21</date>
 	</packageinformation>
 
 	<authorinformation>
