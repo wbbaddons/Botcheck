@@ -5,8 +5,8 @@
 		<packagename language="de">Botcheck Fragen</packagename>
 		<packagedescription>Asks predefined questions in the registration form to prevent registrations by bots.</packagedescription>
 		<packagedescription language="de">Stellt bei der Registrierung vordefinierte Fragen um Bots zu erkennen.</packagedescription>
-		<version>1.0.0 RC 4</version>
-		<date>2014-01-21</date>
+		<version>1.0.0 RC 5</version>
+		<date>2014-01-22</date>
 	</packageinformation>
 
 	<authorinformation>
@@ -33,5 +33,9 @@
 		<instruction type="template">templates.tar</instruction>
 		<instruction type="templateListener">templateListener.xml</instruction>
 		<instruction type="eventListener">eventListener.xml</instruction>
+	</instructions>
+	
+	<instructions type="update" fromversion="1.0.0 RC 4">
+		<instruction type="sql">update_1.0.0rc4_1.0.0rc5.sql</instruction>
 	</instructions>
 </package>
