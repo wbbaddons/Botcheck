@@ -38,6 +38,11 @@ class BotcheckQuestionAction extends AbstractDatabaseObjectAction {
 	protected $permissionsUpdate = array('admin.user.botcheck.canManageQuestions');
 	
 	/**
+	 * @see	\wcf\data\AbstractDatabaseObjectAction::$requireACP
+	 */
+	protected $requireACP = array('create', 'delete', 'update');
+	
+	/**
 	 * @see	wcf\data\AbstractDatabaseObjectAction::delete()
 	 */
 	public function delete() {

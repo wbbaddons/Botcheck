@@ -37,5 +37,9 @@
 	
 	<instructions type="update" fromversion="1.0.0 RC 4">
 		<instruction type="sql">update_1.0.0rc4_1.0.0rc5.sql</instruction>
+		<instruction type="acpTemplate">acptemplates.tar</instruction>
+		<instruction type="file">files.tar</instruction>
+		<instruction type="language">language/*.xml</instruction>
+		<instruction type="template">templates.tar</instruction>
 	</instructions>
 </package>

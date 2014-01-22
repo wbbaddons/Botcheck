@@ -35,7 +35,9 @@
 				<tr>
 					<th class="columnID columnLabelID{if $sortField == 'questionID'} active {@$sortOrder}{/if}" colspan="2"><a href="{link controller='BotcheckQuestionList'}pageNo={@$pageNo}&sortField=questionID&sortOrder={if $sortField == 'qustionID' && $sortOrder == 'ASC'}DESC{else}ASC{/if}{/link}">{lang}wcf.global.objectID{/lang}</a></th>
 					<th class="columnTitle columnLabel{if $sortField == 'question'} active {@$sortOrder}{/if}"><a href="{link controller='BotcheckQuestionList'}pageNo={@$pageNo}&sortField=question&sortOrder={if $sortField == 'question' && $sortOrder == 'ASC'}DESC{else}ASC{/if}{/link}">{lang}wcf.acp.botcheck.question.question{/lang}</a></th>
-					
+					<th class="columnTitle columnLabel{if $sortField == 'succeeded'} active {@$sortOrder}{/if}"><a href="{link controller='BotcheckQuestionList'}pageNo={@$pageNo}&sortField=succeeded&sortOrder={if $sortField == 'succeeded' && $sortOrder == 'ASC'}DESC{else}ASC{/if}{/link}">{lang}wcf.acp.botcheck.question.succeeded{/lang}</a></th>
+					<th class="columnTitle columnLabel{if $sortField == 'failed'} active {@$sortOrder}{/if}"><a href="{link controller='BotcheckQuestionList'}pageNo={@$pageNo}&sortField=failed&sortOrder={if $sortField == 'failed' && $sortOrder == 'ASC'}DESC{else}ASC{/if}{/link}">{lang}wcf.acp.botcheck.question.failed{/lang}</a></th>
+
 					{event name='columnHeads'}
 				</tr>
 			</thead>
@@ -51,7 +53,9 @@
 						</td>
 						<td class="columnID">{@$question->questionID}</td>
 						<td class="columnTitle columnLabel"><a href="{link controller='BotcheckQuestionEdit' object=$question}{/link}" title="{$question}" class="question">{$question}</a></td>
-						
+						<td class="columnDigits columnSucceeded">{@$question->succeeded}</td>
+						<td class="columnDigits columnFailed">{@$question->failed}</td>
+
 						{event name='columns'}
 					</tr>
 				{/foreach}

@@ -27,7 +27,7 @@ class BotcheckQuestionListPage extends SortablePage {
 	/**
 	 * @see	wcf\page\SortablePage::$validSortFields
 	 */
-	public $validSortFields = array('questionID', 'question');
+	public $validSortFields = array('questionID', 'question', 'failed', 'succeeded');
 	
 	/**
 	 * @see	wcf\page\AbstractPage::$neededPermissions

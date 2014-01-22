@@ -4,6 +4,7 @@ namespace wcf\data\botcheck\question;
 use wcf\data\DatabaseObjectEditor;
 use wcf\data\IEditableCachedObject;
 use wcf\system\cache\builder\BotcheckQuestionCacheBuilder;
+use wcf\system\WCF;
 
 /**
  * Provides functions to edit questions.
@@ -26,5 +27,20 @@ class BotcheckQuestionEditor extends DatabaseObjectEditor implements IEditableCa
 	 */
 	public static function resetCache() {
 		BotcheckQuestionCacheBuilder::getInstance()->reset();
+	}
+
+	/**
+	 * Updates the question stats.
+	 *
+	 * @var	boolean	$success
+	 */
+	public function updateStats($success = true) {
+		$updateField = ($success ? 'succeeded' : 'failed');
+
+		$sql = "UPDATE	wcf".WCF_N."_botcheck_question
+				SET		".$updateField." = ".$updateField." + 1
+				WHERE	questionID = ?";
+		$statement = WCF::getDB()->prepareStatement($sql);
+		$statement->execute(array($this->questionID));
 	}
 }
